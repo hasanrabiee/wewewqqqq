@@ -200,9 +200,28 @@
                                 <a href="{{route('ExhibitorOperator.ContactUs')}}" class="nav-link @if( Request::is("*ContactUs*")) active @endif"><span>{{__('message.ContactUs')}}</span></a>
                             </li>
 
+
+
                             <li class="nav-item text-center mt-md-2">
-                                <a href="/Exhabition/" class="" target="_blank"><span class="btn btn-success btn-lg">Enter Exhibition</span></a>
+                                <a href="http://amitisgroup.net/HTML5/" class="" target="_blank"><span class="btn btn-success btn-lg">{{__("message.EnterExhabition")}}</span></a>
                             </li>
+
+                            <li class="nav-item text-center mt-md-2">
+
+                                <div class="btn-group">
+                                    <a class="btn btn-dark" target="_blank" href="{{route("Auditorium")}}">
+                                        Auditorium
+                                    </a>
+                                    <a class="btn btn-info" target="_blank" href="{{route("Lounge")}}">
+                                        Lounge
+                                    </a>
+                                </div>
+
+                            </li>
+
+
+
+
                             <!-- /main -->
                         </ul>
                     </div>

@@ -384,12 +384,22 @@
 
 </head>
 
-<body class="h-100 w-100 overflow" style="overflow-x:hidden !important;width:100% !important ; height:100% !important;background-size: cover;background-repeat:no-repeat;background-image: url(@if(\App\Site::find(1)->SigninBackground != null) {{asset(\App\Site::find(1)->SigninBackground)}}   @else {{asset('assets/img/poster.jpg')}}@endif">
+
+
+<body style="background: url('{{\App\Site::find(1)->SigninBackground}}') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+    ;">
+
+
 <p id="gfg">
 
 </p>
 
-{{--    {{dd(\Illuminate\Support\Facades\Cache::get("username"))}}--}}
 
 <div>
     <div class="row mt-md-3">
@@ -493,7 +503,7 @@
                         </button>
                     </div>
                     <div class="form-group w-100">
-                        <div class="row">
+                        <div class="row" style="position:relative;">
                             <div class="col-md-6 ">
                                 <p onclick="window.open('{{route('Exhibitor-Register')}}', '_self')"
                                    class="text " style="color: darkblue;cursor: pointer"><i class="fa fa-id-card" style="margin: 5px"></i>{{__('message.signupasexhibitor')}}</p>
@@ -508,6 +518,14 @@
                             <div class="col-md-4 mt-2 mt-md-1">
                                 <a href="" class="w-100 mt-2 mt-md-1 mt-2 icon-android-mob text-center"><img class="icon-android-mob w-75" src="{{asset("assets/img/androidicon.png")}}" alt=""></a>
                             </div>
+
+                            <div>
+                                <img src="{{\App\Site::first()->Logo1}}" alt="" style="position: absolute;bottom: -100px;left: 10px;height: 60px;width: 60px;">
+                                <img src="{{\App\Site::first()->Logo2}}" alt="" style="position: absolute;bottom: -100px;left: 80px;height: 60px;width: 60px;">
+                                <img src="{{\App\Site::first()->Logo3}}" alt="" style="position: absolute;bottom: -100px;left: 150px;height: 60px;width: 60px;">
+                            </div>
+
+
                         </div>
                     </div>
 
@@ -515,13 +533,13 @@
                 </form>
             </div>
         </div>
+
+
+
+
     </div>
 
-    <div>
-        <img src="{{\App\Site::first()->Logo1}}" alt="" style="position: absolute;bottom: 10px;left: 10px;height: 60px;width: 60px;">
-        <img src="{{\App\Site::first()->Logo2}}" alt="" style="position: absolute;bottom: 10px;left: 80px;height: 60px;width: 60px;">
-        <img src="{{\App\Site::first()->Logo3}}" alt="" style="position: absolute;bottom: 10px;left: 150px;height: 60px;width: 60px;">
-    </div>
+
 
     {{--<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>--}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

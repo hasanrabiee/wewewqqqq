@@ -135,7 +135,7 @@
                                 <div class="chart position-relative" id="traffic-sources"></div>
                             </div>
 
-                            <div class="card p-3" style="background-color:rgba(54,54,54,0.65);color: white">
+                            <div class="card p-3" style="background-color:#006B63;color: white">
                                 <div class="card-body py-0">
                                     <div class="row">
                                         <div class="col-md-6 col-12 font-size-lg">
@@ -207,7 +207,7 @@
                             <div class="row">
 
                                 <div class="col-xl-6">
-                                    <div class="card p-3" style="background-color:rgba(54,54,54,0.65);color: white;height: 250px;">
+                                    <div class="card p-3" style="background-color:#006B63;color: white;height: 250px;">
                                         <div class="card-body py-0">
                                             <p>
                                                 First Name: {{\Illuminate\Support\Facades\Auth::user()->FirstName}}
@@ -228,7 +228,7 @@
 
 
                                 <div class="col-xl-6">
-                                    <div class="card p-3" style="background-color:rgba(54,54,54,0.65);;color: white">
+                                    <div class="card p-3" style="background-color:#006B63;color: white">
                                         <div class="card-body py-0">
                                             <div class="row">
                                                 <form action="{{route('ExhibitorOperator.ChangePassword')}}" method="post" class="w-100">
