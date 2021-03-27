@@ -525,7 +525,6 @@
                                 <img src="{{\App\Site::first()->Logo3}}" alt="" style="position: absolute;bottom: -100px;left: 150px;height: 60px;width: 60px;">
                             </div>
 
-
                         </div>
                     </div>
 
@@ -533,10 +532,6 @@
                 </form>
             </div>
         </div>
-
-
-
-
     </div>
 
 

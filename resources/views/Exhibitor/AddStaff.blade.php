@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="col-md-6">
 
-                                        <div style="height: 500px;background-color:white;border-radius: 5px;" class="mt-3 mt-md-5">
+                                        <div style="background-color:white;border-radius: 5px;"  class="mt-3 mt-md-5 add-staff">
                                             <div class="w-100 bg-dark" style="height: 75px;border-radius: 5px 5px 0 0 ">
                                                 <br>
                                                 <h3 class="ml-3 mt-n1">{{__("message.YourStaffEmailList")}}</h3>

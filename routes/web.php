@@ -394,6 +394,7 @@ Route::group(['middleware' => ['auth']] , function (){
 
 
 
+
     Route::get('/recordings', 'recordingsController@usersIndex')->name('recordings-users');
     Route::get('Auditorium','WebController@Auditorium')->name('Auditorium');
     Route::get('AuditoriumPlay/{ID}','WebController@AuditoriumPlay')->name('AuditoriumPlay');
