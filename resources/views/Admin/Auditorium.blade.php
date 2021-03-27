@@ -256,7 +256,7 @@
                                                 <i class="fa fa-eye"></i>
                                             </a>
 
-                                            <table class="mt-5 table table-striped table-bordered table-hover table-light">
+                                            <table class="mt-5 table table-striped table-bordered table-hover table-light table-responsive-sm">
                                                 <thead>
                                                     <th>{{__("message.ConferenceTitle")}}</th>
                                                     <th>{{__("message.Time")}}</th>
