@@ -122,83 +122,85 @@
 
                                     </table>
                                     <br>
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">{{__("message.CurrentLevelOfEducationItems")}}</label>
-                                        <input type="text" class="form-control" name="educationItems" value="{{\App\VisitorForm::first()->educationItems}}">
-                                    </div>
+                                    <div class="text-white">
+                                        <div class="form-group">
+                                            <label for="" class="">{{__("message.CurrentLevelOfEducationItems")}}</label>
+                                            <input type="text" class="form-control" name="educationItems" value="{{\App\VisitorForm::first()->educationItems}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">{{__("message.WhatDegreeAreYouInterestedIn?")}} </label>
-                                        <input type="text" class="form-control" name="interestedDegreeItems" value="{{\App\VisitorForm::first()->interestedDegreeItems}}">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="" class="">{{__("message.WhatDegreeAreYouInterestedIn?")}} </label>
+                                            <input type="text" class="form-control" name="interestedDegreeItems" value="{{\App\VisitorForm::first()->interestedDegreeItems}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">{{__("message.WhatFieldOfStudyAreYouInterestedIn?")}}</label>
-                                        <input type="text" class="form-control" name="interestedFieldItems" value="{{\App\VisitorForm::first()->interestedFieldItems}}">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="" class="">{{__("message.WhatFieldOfStudyAreYouInterestedIn?")}}</label>
+                                            <input type="text" class="form-control" name="interestedFieldItems" value="{{\App\VisitorForm::first()->interestedFieldItems}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">{{__("message.ProfessionItems")}}</label>
-                                        <input type="text" class="form-control" name="VisitorProfession" value="{{\App\Site::first()->VisitorProfession}}">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="" class="">{{__("message.ProfessionItems")}}</label>
+                                            <input type="text" class="form-control" name="VisitorProfession" value="{{\App\Site::first()->VisitorProfession}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">
-                                            {{__("message.Gender")}}:
-                                        </label>
-                                        <input type="text" class="form-control" name="VisitorGender" value="{{\App\Site::first()->VisitorGender}}">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="" class="">
+                                                {{__("message.Gender")}}:
+                                            </label>
+                                            <input type="text" class="form-control" name="VisitorGender" value="{{\App\Site::first()->VisitorGender}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">
-                                            {{__("message.CityItems")}}:
-                                        </label>
-                                        <input type="text" class="form-control" name="cityItems" value="{{\App\VisitorForm::first()->cityItems}}">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="" class="">
+                                                {{__("message.CityItems")}}:
+                                            </label>
+                                            <input type="text" class="form-control" name="cityItems" value="{{\App\VisitorForm::first()->cityItems}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">
-                                            {{__("message.InWhichCountryAreYouInterestedInStudy")}}
-                                        </label>
-                                        <input type="text" class="form-control" name="countryInterestedItems" value="{{\App\VisitorForm::first()->countryInterestedItems}}">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="" class="">
+                                                {{__("message.InWhichCountryAreYouInterestedInStudy")}}
+                                            </label>
+                                            <input type="text" class="form-control" name="countryInterestedItems" value="{{\App\VisitorForm::first()->countryInterestedItems}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">
+                                        <div class="form-group">
+                                            <label for="" class="">
 
-                                            {{__("message.AreYouInterestedForOnlineDegreeProgram")}}
+                                                {{__("message.AreYouInterestedForOnlineDegreeProgram")}}
 
-                                        </label>
-                                        <input type="text" class="form-control" name="onlineDegreeProgramsItems" value="{{\App\VisitorForm::first()->onlineDegreeProgramsItems}}">
-                                    </div>
+                                            </label>
+                                            <input type="text" class="form-control" name="onlineDegreeProgramsItems" value="{{\App\VisitorForm::first()->onlineDegreeProgramsItems}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">
-                                            {{__("message.AdmissionSemesterItems")}}:
-                                        </label>
-                                        <input type="text" class="form-control" name="admissionSemesterItems" value="{{\App\VisitorForm::first()->admissionSemesterItems}}">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="" class="">
+                                                {{__("message.AdmissionSemesterItems")}}:
+                                            </label>
+                                            <input type="text" class="form-control" name="admissionSemesterItems" value="{{\App\VisitorForm::first()->admissionSemesterItems}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">
-                                            {{__("message.ProfessionInterestedItems")}}:
-                                        </label>
-                                        <input type="text" class="form-control" name="professionInterestedItems" value="{{\App\VisitorForm::first()->professionInterestedItems}}">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="" class="">
+                                                {{__("message.ProfessionInterestedItems")}}:
+                                            </label>
+                                            <input type="text" class="form-control" name="professionInterestedItems" value="{{\App\VisitorForm::first()->professionInterestedItems}}">
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">
-                                            {{__("message.ProfileItems")}}:
-                                        </label>
-                                        <input type="text" class="form-control" name="profileItems" value="{{\App\VisitorForm::first()->profileItems}}">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="" class="">
+                                                {{__("message.ProfileItems")}}:
+                                            </label>
+                                            <input type="text" class="form-control" name="profileItems" value="{{\App\VisitorForm::first()->profileItems}}">
+                                        </div>
 
 
-                                    <div class="form-group">
-                                        <label for="" class="text-dark">
-                                            {{__("message.Institution")}}:
-                                        </label>
-                                        <input type="text" class="form-control" name="institutionItems" value="{{\App\ExhibitorForms::first()->institutionItems}}">
+                                        <div class="form-group">
+                                            <label for="" class="">
+                                                {{__("message.Institution")}}:
+                                            </label>
+                                            <input type="text" class="form-control" name="institutionItems" value="{{\App\ExhibitorForms::first()->institutionItems}}">
+                                        </div>
                                     </div>
 
 
