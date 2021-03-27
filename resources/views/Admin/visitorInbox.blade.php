@@ -103,7 +103,7 @@
                                                 </div>
                                                 <div class="text-center">
                                                     <h1>
-                                                        {{\App\User::find(request()->UserID)->FirstName}}
+                                                        {{\App\User::find(request()->UserID)->formRule}}
                                                     </h1>
                                                 </div>
                                                 <p class="font-size-lg"><strong>{{__("message.CompanyName")}}:</strong>{{\App\User::find(request()->UserID)->userCompanyName}}</p>

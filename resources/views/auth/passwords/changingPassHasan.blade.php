@@ -19,8 +19,6 @@
                          style="width: 113px;margin-right: 34px;">
                 @endif
             </h1>
-            <h1 class="mb-1"
-                style="color: black;opacity: 1;font-size: 20px;">{{__('message.PasswordResetHead')}}</h1>
             <h3 class="mb-5"></h3>
             <div>
                 <form style="width: 311px;" method="POST" action="{{route('ChangingPassHasanPost') }}">

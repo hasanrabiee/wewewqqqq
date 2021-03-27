@@ -19,8 +19,6 @@
                          style="width: 113px;margin-right: 34px;">
                 @endif
             </h1>
-            <h1 class="mb-1"
-                style="color: black;opacity: 1;font-size: 20px;">{{__('message.PasswordResetHead')}}</h1>
             <h3 class="mb-5"></h3>
             <div>
                 <form style="width: 311px;" method="POST" action="{{ route('PassChangeCheckMobile') }}">
@@ -32,6 +30,12 @@
 
                         <input type="text" class="form-control" name="phoneNumber">
                     </div>
+
+                      <div class="form-group">
+                          <small>
+                              example:+1123456780
+                          </small>
+                      </div>
 
                     <input type="submit" value="send message" class="btn btn-success">
 
