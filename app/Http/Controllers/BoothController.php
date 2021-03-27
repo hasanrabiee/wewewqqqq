@@ -43,6 +43,8 @@ class BoothController extends Controller
 
 //        dd($request);
 
+
+
         $myvar = 1;
         $request->validate([
             'password' => 'required|string|min:8|confirmed|regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!@#$%^&*]).*$/',
@@ -59,10 +61,11 @@ class BoothController extends Controller
 
 
 
-
+        $CountryCode = $request->CountryCode;
         $PhoneNumber = preg_replace('/-/', '', $request->PhoneNumber);
         $PhoneNumber = preg_replace('/\(/', '', $PhoneNumber);
         $PhoneNumber = preg_replace('/\)/', '', $PhoneNumber);
+        $PhoneNumber = $CountryCode.$PhoneNumber;
 
         $dataex = [
             'UserName' => $request->CompanyName,
