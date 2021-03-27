@@ -332,9 +332,8 @@ class WebController extends Controller
                 "password"=>Hash::make($request->password),
                 "phoneToken"=>null
             ]);
-
-            Alert::Success("Password Change Successfuly");
-            return redirect("/");
+            Alert::success("password Changed Successfully");
+            return redirect(route("login"));
         }else{
             Alert::error("Passwords Not Match");
             return redirect()->back();

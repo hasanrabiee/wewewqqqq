@@ -97,7 +97,7 @@
                                                 <input type="text" class="form-control" placeholder="{{__("message.ExhibitorWelcome")}}" name="ExhibitorWelcome" value="{{$Site->ExhibitorWelcome}}">
                                             </div>
                                             <div class="form-group">
-                                                <textarea class="form-control" rows="5" placeholder="{{__("message.AboutPayment")}}" name="ExhibitorAbout">{{$Site->ExhibitorAbout}}</textarea>
+                                                <textarea class="form-control" rows="5" placeholder="About Exhibitor" name="ExhibitorAbout">{{$Site->ExhibitorAbout}}</textarea>
                                             </div>
                                             <div class="form-group">
                                                 <textarea class="form-control" placeholder="{{__("message.ExhibitorAboutPayment")}}" rows="5" name="ExhibitorAboutPayment">{{$Site->ExhibitorAboutPayment}}</textarea>

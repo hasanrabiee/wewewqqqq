@@ -390,11 +390,20 @@ class VisitorController extends Controller
             $Booths[] = booth::find($item->BoothID);
         }
 
+        if (\request()->SearchTerm){
+            $booth = booth::where("CompanyName",\request()->SearchTerm)->get();
+            if ($booth->count() == 0){
+                Alert::error("Nothing Found");
+                return redirect()->back();
+            }else{
+                return view('Visitor.inbox')->with(['Booths' => $booth]);
+            }
+        }
+
         if (\request()->CompanyID){
             $Booth = booth::find(\request()->CompanyID);
             $Booth_id = booth::find(\request()->CompanyID)->user->id;
             $userInfo=User::where("id",$Booth_id)->first();
-
             return view('Visitor.inbox')->with(['Booths' => $Booths , 'Booth' => $Booth,'userInfo'=>$userInfo]);
         }
         return view('Visitor.inbox')->with(['Booths' => $Booths]);

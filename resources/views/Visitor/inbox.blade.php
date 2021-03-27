@@ -79,7 +79,7 @@
                                     <div class="col-md-4" style="border: 1px solid white;border-radius: 5px; height: 600px;overflow-y: auto">
 
 
-                                        <form action="{{route("Exhibitor.Inbox")}}" method="GET" class="w-100">
+                                        <form action="{{route("Visitor.inbox")}}" method="GET" class="w-100">
                                             <div class="input-group mt-2 mb-2">
 
                                                 <input name="SearchTerm" type="text" class="form-control" placeholder="Search...">

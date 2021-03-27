@@ -1,8 +1,3 @@
-<?php
-
-
-
-?>
 @extends('layouts.app')
     <!doctype html>
 <html>
@@ -453,7 +448,13 @@
                 <form class="col-sm-12 col-md-4 " method="POST" action="{{ route('login') }}">
                     @csrf
                     <h1 id="countdown"></h1>
+                    @if(session("passMobileChanged"))
 
+                        <div class="alert alert-success p-1">
+                            Your Password Changed Successfully
+                        </div>
+
+                    @endif
                     <p class="text-left text-black">{{__('message.LoginText')}}</p>
                     <div class="form-group">
                         <input class="form-control @error('email') border border-danger @enderror"
