@@ -56,14 +56,15 @@
 
 
 
-    @include("Sidebars.admin-sidebar")
 
 
 
     <!-- Main content -->
         <div class="content-wrapper">
+        @include("Sidebars.admin-sidebar")
 
-            <!-- Content area -->
+
+        <!-- Content area -->
             <div class="content">
 
                 <!-- Main charts -->

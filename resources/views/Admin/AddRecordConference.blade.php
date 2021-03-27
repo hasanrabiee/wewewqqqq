@@ -57,8 +57,6 @@
     <div>
 
 
-    @include("Sidebars.exhibitor-sidebar")
-
 
 
 
@@ -70,8 +68,10 @@
 
 
         <div class="content-wrapper" style="overflow-x: hidden">
+        @include("Sidebars.exhibitor-sidebar")
 
-            <!-- Content area -->
+
+        <!-- Content area -->
             <div class="content">
 
                 <!-- Main charts -->

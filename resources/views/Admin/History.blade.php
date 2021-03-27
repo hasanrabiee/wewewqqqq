@@ -35,13 +35,6 @@
 @section('content')
 
 
-    <body style="background: url('{{\App\Site::AdminBackground()}}') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100%;
-        ;">
     {{--    Hasan start here !!!!!--}}
 
 
@@ -190,9 +183,9 @@
     <!-- Page content -->
 
 
-
-    <div class="page-content pt-0 mt-3">
     @include("Sidebars.admin-sidebar")
+    <div class="page-content pt-0">
+
     <!-- Main content -->
         <div class="content-wrapper">
             <!-- Content area -->

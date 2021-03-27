@@ -54,12 +54,11 @@
 
     <!-- Page content -->
 
-    <div class="page-content pt-0 mt-3">
+    <div class="page-content pt-0">
 
 
 
 
-    @include("Sidebars.admin-sidebar")
 
 
 
@@ -67,7 +66,10 @@
     <!-- Main content -->
         <div class="content-wrapper">
 
-            <!-- Content area -->
+        @include("Sidebars.admin-sidebar")
+
+
+        <!-- Content area -->
             <div class="content">
 
                 <!-- Main charts -->

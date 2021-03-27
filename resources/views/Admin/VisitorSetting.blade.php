@@ -60,7 +60,6 @@
 
 
 
-    @include("Sidebars.admin-sidebar")
 
 
 
@@ -68,7 +67,10 @@
         <!-- Main content -->
         <div class="content-wrapper">
 
-            <!-- Content area -->
+        @include("Sidebars.admin-sidebar")
+
+
+        <!-- Content area -->
             <div class="content">
 
                 <!-- Main charts -->

@@ -54,14 +54,16 @@
         ;">
 
     <!-- Page content -->
-    <div class="page-content pt-0 mt-3">
-    @include("Sidebars.admin-sidebar")
+    <div class="page-content pt-0">
 
     <!-- Main content -->
         <div class="content-wrapper">
 
+        @include("Sidebars.admin-sidebar")
 
-            <!-- Content area -->
+
+
+        <!-- Content area -->
             <div class="content">
 
 

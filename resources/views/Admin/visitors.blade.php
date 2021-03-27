@@ -42,9 +42,9 @@
         background-size: cover;
         height: 100%;
         ;">
+    @include("Sidebars.admin-sidebar")
 
     <div class="page-content pt-0">
-    @include("Sidebars.admin-sidebar")
     <!-- Main content -->
         <div class="content-wrapper">
 

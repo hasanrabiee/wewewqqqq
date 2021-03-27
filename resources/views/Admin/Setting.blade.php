@@ -53,12 +53,11 @@
 
     <!-- Page content -->
 
-    <div class="page-content pt-0 mt-3">
+    <div class="page-content pt-0">
 
 
 
 
-    @include("Sidebars.admin-sidebar")
 
 
 
@@ -66,7 +65,10 @@
         <!-- Main content -->
         <div class="content-wrapper">
 
-            <!-- Content area -->
+        @include("Sidebars.admin-sidebar")
+
+
+        <!-- Content area -->
             <div class="content">
 
                 <!-- Main charts -->
@@ -87,7 +89,7 @@
                                     <li class="nav-item ">
                                         <a class="nav-link active" id="Setting-tab" data-toggle="tab" href="#Setting" role="tab" aria-controls="Setting" aria-selected="true"><span style="color: black">{{__("message.Setting")}}</span></a>
                                     </li>
-                                    
+
                                     <li class="nav-item">
                                         <a class="text-white nav-link" id="BackUp-tab" data-toggle="tab" href="#BackUp" role="tab" aria-controls="BackUp" aria-selected="false"><span style="color: black">{{__("message.BackUp")}}</span></a>
                                     </li>

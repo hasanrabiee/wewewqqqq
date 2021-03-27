@@ -191,30 +191,12 @@
         height: 100%;
         ;">
 
-    <!-- Main navbar -->
-    <div class="navbar navbar-expand-md">
-        <div class="navbar-brand wmin-200">
-            <a href="profile.php" class="d-inline-block">
-            </a>
-        </div>
-
-        <div class="d-md-none">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
-
-            </button>
-            <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
-                <i class="fa fas fa-bars" style="color: white !important;"></i>
-            </button>
-        </div>
-    </div>
-    <!-- /main navbar -->
-
     <!-- Page content -->
 
+    @include("Sidebars.admin-sidebar")
 
     <div class="page-content pt-0">
 
-    @include("Sidebars.admin-sidebar")
 
         <!-- Main content -->
         <div class="content-wrapper">
