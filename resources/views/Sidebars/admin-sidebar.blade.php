@@ -353,31 +353,9 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link dropdown @if( Request::is("Admin/*Form*")) active @endif ">
-                            <span style="font-weight: bolder">
-                                Form Adjustment
-                            </span>
+                                <a href="{{route("Admin.VisitorForm")}}" class="nav-link @if( Request::is("*VisitorForm*")) active @endif">
+                                    Form Adjustment
                                 </a>
-
-                                <ul class="nav nav-group-sub" data-submenu-title="Layouts" style="display: none;">
-                                    <li class="nav-item">
-                                        <a href="{{route("Admin.ExhibitorForm")}}" class="nav-link">
-                                            Exhibitors
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{route("Admin.VisitorForm")}}" class="nav-link">
-                                            Visitors
-                                        </a>
-                                    </li>
-                                    {{--                            <li class="nav-item">--}}
-                                    {{--                                <a href="{{route("Admin.VisitorForm")}}" class="nav-link">Exhibitors--}}
-
-
-                                    {{--                                </a>--}}
-                                    {{--                            </li>--}}
-                                </ul>
-
                             </li>
 
 

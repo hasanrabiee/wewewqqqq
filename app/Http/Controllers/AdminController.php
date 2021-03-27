@@ -2229,6 +2229,9 @@ class AdminController extends Controller
 
 
 
+        ExhibitorForms::whereId(1)->update([
+            "institutionItems"=>$request->institutionItems,
+        ]);
 
 
         VisitorForm::whereId(1)->update([

@@ -117,118 +117,7 @@
                                             </td>
                                         </tr>
 
-                                        <tr class="" style="border-top: 2px solid black">
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
 
-
-
-                                        <tr>
-                                            <td>{{__("message.Education")}}</td>
-                                            @if (\App\VisitorForm::first()->education == "active")
-                                                <td>{{__("message.Active")}}</td>
-                                            @else
-                                                <td>{{__("message.DeActive")}}</td>
-                                            @endif
-
-                                            <td>
-
-                                                <input type="checkbox" value="active" style="width: 100px !important;" name="education"  @if (\App\VisitorForm::first()->education == "active") checked @endif>
-
-                                            </td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>{{__("message.Gender")}}</td>
-                                            @if (\App\VisitorForm::first()->gender == "active")
-                                                <td>{{__("message.Active")}}</td>
-                                            @else
-                                                <td>{{__("message.DeActive")}}</td>
-                                            @endif
-
-                                            <td>
-
-                                                <input type="checkbox" value="active" style="width: 100px !important;" name="gender"  @if (\App\VisitorForm::first()->gender == "active") checked @endif>
-
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>{{__("message.CountryStudy")}}</td>
-                                            @if (\App\VisitorForm::first()->countryStudy == "active")
-                                                <td>{{__("message.Active")}}</td>
-                                            @else
-                                                <td>{{__("message.DeActive")}}</td>
-                                            @endif                                            <td>
-                                                <input type="checkbox" value="active" style="width: 100px !important;" name="countryStudy"  @if (\App\VisitorForm::first()->countryStudy == "active") checked @endif>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{__("message.InterestedDegree")}}</td>
-                                            @if (\App\VisitorForm::first()->InterestedDegree == "active")
-                                                <td>{{__("message.Active")}}</td>
-                                            @else
-                                                <td>{{__("message.DeActive")}}</td>
-                                            @endif
-                                            <td>
-                                                <input type="checkbox" value="active" style="width: 100px !important;" name="InterestedDegree"  @if (\App\VisitorForm::first()->InterestedDegree == "active") checked @endif>
-                                            </td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>{{__("message.InterestedField")}}</td>
-
-                                            @if (\App\VisitorForm::first()->InterestedField == "active")
-                                                <td>{{__("message.Active")}}</td>
-                                            @else
-                                                <td>{{__("message.DeActive")}}</td>
-                                            @endif
-                                            <td>
-                                                <input type="checkbox" value="active" style="width: 100px !important;" name="InterestedField"  @if (\App\VisitorForm::first()->InterestedField == "active") checked @endif>
-                                            </td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>{{__("message.LanguageOfStudy")}}</td>
-                                            @if (\App\VisitorForm::first()->languageOfStudy == "active")
-                                                <td>{{__("message.Active")}}</td>
-                                            @else
-                                                <td>{{__("message.DeActive")}}</td>
-                                            @endif
-                                            <td>
-                                                <input type="checkbox" value="active" style="width: 100px !important;" name="languageOfStudy"  @if (\App\VisitorForm::first()->languageOfStudy == "active") checked @endif>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr>
-                                            <td>{{__("message.OnlineDegreeProgram")}}</td>
-                                            @if (\App\VisitorForm::first()->onlineDegreeProgram == "active")
-                                                <td>{{__("message.Active")}}</td>
-                                            @else
-                                                <td>{{__("message.DeActive")}}</td>
-                                            @endif
-                                            <td>
-                                                <input type="checkbox" value="active" style="width: 100px !important;" name="onlineDegreeProgram"  @if (\App\VisitorForm::first()->onlineDegreeProgram == "active") checked @endif>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>{{__("message.InterestedScholarShip")}}</td>
-                                            @if (\App\VisitorForm::first()->interestedScholarShip == "active")
-                                                <td>{{__("message.Active")}}</td>
-                                            @else
-                                                <td>{{__("message.DeActive")}}</td>
-                                            @endif
-                                            <td>
-                                                <input type="checkbox" value="active" style="width: 100px !important;" name="interestedScholarShip"  @if (\App\VisitorForm::first()->interestedScholarShip == "active") checked @endif>
-                                            </td>
-                                        </tr>
                                         </tbody>
 
                                     </table>
@@ -303,6 +192,15 @@
                                         </label>
                                         <input type="text" class="form-control" name="profileItems" value="{{\App\VisitorForm::first()->profileItems}}">
                                     </div>
+
+
+                                    <div class="form-group">
+                                        <label for="" class="text-dark">
+                                            {{__("message.Institution")}}:
+                                        </label>
+                                        <input type="text" class="form-control" name="institutionItems" value="{{\App\ExhibitorForms::first()->institutionItems}}">
+                                    </div>
+
 
                                     <input type="submit" value="{{__("message.SaveChanges")}}" class="btn btn-success w-100">
                                 </form>
