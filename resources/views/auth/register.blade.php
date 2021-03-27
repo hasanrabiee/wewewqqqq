@@ -90,9 +90,6 @@
                                                 <h2 class="stroke-title text-white">Visitor Registration</h2>
 
 
-                                                @if (\App\VisitorForm::first()->studentStatus == "active")
-
-                                                @endif
 
 
                                                 <div class="card" style="background-color:rgba(255,255,255,1);color: black;height: 1000px;position: relative">
@@ -140,7 +137,6 @@
                                                                                         <label for="">
                                                                                             {{__("message.Gender")}}*:
                                                                                         </label>
-                                                                                        @if (\App\VisitorForm::first()->gender == "active")
 
                                                                                             <select class="form-control" name="Gender" required >
                                                                                                 <option selected disabled hidden value="">{{__('message.Select')}} title</option>
@@ -149,7 +145,6 @@
                                                                                                 @endforeach
                                                                                             </select>
 
-                                                                                        @endif
                                                                                     </div>
 
 
@@ -474,7 +469,6 @@
                                                                                 <div class="col-md-4">
 
 
-                                                                                    @if (\App\VisitorForm::first()->education == "active")
                                                                                         <div class="form-group">
                                                                                             <label for="">
                                                                                                 {{__("message.CurrentLevelOfEducation")}}*:
@@ -486,11 +480,9 @@
                                                                                                 @endforeach
                                                                                             </select>
                                                                                         </div>
-                                                                                    @endif
 
 
 
-                                                                                    @if (\App\VisitorForm::first()->countryStudy == "active")
                                                                                         <div class="form-group">
                                                                                             <label for="">
                                                                                                 {{__("message.InWhichCountryAreYouInterestedInStudy")}}*
@@ -506,9 +498,7 @@
                                                                                             </select>
 
                                                                                         </div>
-                                                                                    @endif
 
-                                                                                    @if (\App\VisitorForm::first()->InterestedDegree == "active")
                                                                                         <label for="">
                                                                                             {{__("message.WhatDegreeAreYouInterestedIn?")}}* ?
                                                                                         </label>
@@ -520,8 +510,7 @@
                                                                                                 @endforeach
                                                                                             </select>
                                                                                         </div>
-                                                                                    @endif
-                                                                                    @if (\App\VisitorForm::first()->InterestedField == "active")
+
                                                                                         <div class="form-group">
                                                                                             <label for="">
                                                                                                 {{__("message.WhatFieldOfStudyAreYouInterestedIn?")}}* ?
@@ -533,9 +522,7 @@
                                                                                                 @endforeach
                                                                                             </select>
                                                                                         </div>
-                                                                                    @endif
 
-                                                                                    @if (\App\VisitorForm::first()->languageOfStudy == "active")
                                                                                         <div class="form-group">
                                                                                             <label for="" style="color: grey;line-height: 12px;font-size: 12px;">
 
@@ -548,9 +535,7 @@
                                                                                                       rows="3" required>{{old("languageOfStudy")}}</textarea>
 
                                                                                         </div>
-                                                                                    @endif
 
-                                                                                    @if (\App\VisitorForm::first()->onlineDegreeProgram == "active")
 
                                                                                         <div class="form-group">
                                                                                             {{--                                                                                            <input type="text" class="form-control" name="onlineDegreeProgram" placeholder="onlineDegreeProgram" value="{{old('onlineDegreeProgram')}}">--}}
@@ -564,7 +549,6 @@
                                                                                                 @endforeach
                                                                                             </select>
                                                                                         </div>
-                                                                                    @endif
                                                                                     <div class="form-group">
 
                                                                                         <label for="">
