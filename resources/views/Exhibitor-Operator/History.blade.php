@@ -109,7 +109,7 @@
                                             <button class="btn btn-dark w-100" type="button" onclick="$('#filter').modal('show')">Click to Choose Your Filter</button>
                                             <form action="" class="w-100">
                                                 <div class="input-group mt-2 mb-2">
-                                                    <input type="text" class="form-control" placeholder="Visitor Name" name="search">
+                                                    <input type="text" class="form-control" placeholder="Visitor Name" name="">
                                                     <div class="input-group-append">
                                                         <button class="btn btn-success" type="submit">Search</button>
                                                     </div>

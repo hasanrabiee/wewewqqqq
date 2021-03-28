@@ -391,7 +391,7 @@ class VisitorController extends Controller
         }
 
         if (\request()->SearchTerm){
-            $booth = booth::where("CompanyName",\request()->SearchTerm)->get();
+            $booth = booth::where("CompanyName","LIKE","%".\request()->SearchTerm."%")->get();
             if ($booth->count() == 0){
                 Alert::error("Nothing Found");
                 return redirect()->back();
